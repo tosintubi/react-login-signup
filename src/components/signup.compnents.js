@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import '../index.css';
 
 export default class SignUp extends Component {
     render() {
@@ -8,24 +9,30 @@ export default class SignUp extends Component {
 
                 <div className="form-group">
                     <label>First name</label>
-                    <input type="text" className="form-control" placeholder="First name" />
-                </div>
+                    <input type="text" className="form-control" placeholder="Firstname" />
+                
 
-                <div className="form-group">
+                
                     <label>Last name</label>
-                    <input type="text" className="form-control" placeholder="Last name" />
-                </div>
+                    <input type="text" className="form-control" placeholder="Lastname" />
+               
 
-                <div className="form-group">
+                
                     <label>Email address</label>
-                    <input type="email" className="form-control" placeholder="Enter email" />
-                </div>
+                    <input type="email" className="form-control" placeholder="Email" />
+                
 
-                <div className="form-group">
+                
                     <label>Password</label>
-                    <input type="password" className="form-control" placeholder="Enter password" />
-                </div>
+                    <input type="password" className="form-control" placeholder="Password" />
 
+                    <div>
+                        <input type="checkbox" id="terms" name="terms" />
+                        <label for="terms">By checking this box you agree to the terms and conditions</label>
+                    </div>
+                    
+
+                </div>
                 <button type="submit" className="btn btn-primary btn-block">Sign Up</button>
                 <p className="forgot-password text-right">
                     Already registered <a href="#">sign in?</a>
