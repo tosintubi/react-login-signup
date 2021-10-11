@@ -1,11 +1,9 @@
-import React, { Component } from "react";
+import React from "react";
 import imgPlaceHolder from '../images/img-placeholder.jpg';
 
-export default class Login extends Component {
-    render() {
+const Login =() => {
         return (
             <form>
-                {/* <img src={imgPlaceHolder} alt="BigCo Inc. logo"/> */}
                 <h3>Sign In</h3>
 
                 <div className="form-group">
@@ -31,5 +29,6 @@ export default class Login extends Component {
                 </p>
             </form>
         );
-    }
 }
+
+export default Login;

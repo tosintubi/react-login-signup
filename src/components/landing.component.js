@@ -1,8 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import imgPlaceHolder from '../images/img-placeholder.jpg';
 
-export default class Landing extends Component {
-    render() {
+const SignUp =() => { 
         return (
             <form>
                 {/* <img src={imgPlaceHolder} alt="yakitabu.io"/> */}
@@ -17,5 +16,5 @@ export default class Landing extends Component {
                 <button type="submit" className="btn btn-primary btn-block">Login</button>
             </form>
         );
-    }
 }
+export default SignUp;

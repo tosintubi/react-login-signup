@@ -1,27 +1,16 @@
-import React, { Component } from "react";
+import React from "react";
 import '../index.css';
-
-export default class SignUp extends Component {
-    render() {
+// convert to functinoal comp
+const SignUp =() => {
         return (
             <form>
                 <h3>Sign Up</h3>
 
                 <div className="form-group">
-                    <label>First name</label>
-                    <input type="text" className="form-control" placeholder="Firstname" />
-                
-
-                
-                    <label>Last name</label>
-                    <input type="text" className="form-control" placeholder="Lastname" />
+                   
+                    <input type="text" className="form-control" placeholder="Name" />
                
-
-                
-                    <label>Email address</label>
                     <input type="email" className="form-control" placeholder="Email" />
-                
-
                 
                     <label>Password</label>
                     <input type="password" className="form-control" placeholder="Password" />
@@ -39,5 +28,6 @@ export default class SignUp extends Component {
                 </p>
             </form>
         );
-    }
 }
+
+export default SignUp;
